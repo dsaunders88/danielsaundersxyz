@@ -1,0 +1,14 @@
+.content-wrapper {
+	margin-inline: auto;
+	padding-inline: 1rem;
+	max-width: 60rem;
+
+	&.wide {
+		max-width: 80rem;
+	}
+}
+
+.section {
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+}

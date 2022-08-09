@@ -1,0 +1,35 @@
+{
+	"name": "ds-design-eleventy-starter",
+	"version": "1.0.0",
+	"description": "An Eleventy Starter for DS Design sites.",
+	"main": "index.md",
+	"scripts": {
+		"start": "run-p start:*",
+		"start:eleventy": "eleventy --serve",
+		"start:postcss": "postcss src/styles/site.css --dir _site --watch",
+		"build": "run-s build:eleventy build:postcss",
+		"build:eleventy": "cross-env ELEVENTY_PRODUCTION=true eleventy",
+		"build:postcss": "cross-env NODE_ENV=production postcss src/styles/site.css --dir _site"
+	},
+	"keywords": [
+		"eleventy",
+		"ssg"
+	],
+	"author": "Daniel Saunders",
+	"license": "ISC",
+	"devDependencies": {
+		"@11ty/eleventy": "^1.0.1",
+		"@11ty/eleventy-img": "^2.0.1",
+		"@11ty/eleventy-navigation": "^0.3.3",
+		"autoprefixer": "^10.4.7",
+		"cross-env": "^7.0.3",
+		"cssnano": "^5.1.12",
+		"html-minifier": "^4.0.0",
+		"luxon": "^3.0.1",
+		"npm-run-all": "^4.1.5",
+		"postcss": "^8.4.14",
+		"postcss-cli": "^10.0.0",
+		"postcss-import": "^14.1.0",
+		"tailwindcss": "^3.1.6"
+	}
+}

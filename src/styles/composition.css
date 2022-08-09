@@ -1,0 +1,102 @@
+/* Every Layout Primitives */
+
+.cover {
+	display: flex;
+	flex-direction: column;
+	min-block-size: 100vh;
+	padding: theme("spacing.fluid-space-base");
+
+	& > * {
+		margin-block: theme("spacing.fluid-space-base");
+	}
+
+	& > :first-child:not(h1) {
+		margin-block-start: 0;
+	}
+
+	& > :last-child:not(h1) {
+		margin-block-end: 0;
+	}
+
+	& > h1 {
+		margin-block: auto;
+	}
+}
+
+.cluster {
+	display: flex;
+	flex-wrap: wrap;
+	gap: theme("spacing.fluid-space-base");
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.flow {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+	& > * {
+		margin-block: 0;
+	}
+
+	& > * + * {
+		margin-block-start: theme("spacing.fluid-space-m");
+	}
+}
+
+.frame {
+	--frame-width: 16;
+	--frame-height: 9;
+	aspect-ratio: var(--frame-width) / var(--frameheight);
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	& > img,
+	& > video {
+		inline-size: 100%;
+		block-size: 100%;
+		object-fit: cover;
+	}
+}
+
+.fluid-two-column {
+	--column-space: theme("spacing.fluid-space-3xl");
+	--row-space: theme("spacing.fluid-space-l");
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: var(--column-space);
+	row-gap: var(--row-space);
+
+	& > :first-child {
+		flex-grow: 1;
+	}
+
+	& > :last-child {
+		flex-basis: 0;
+		flex-grow: 999;
+		min-inline-size: 50%;
+	}
+
+	&[data-state="even"] {
+		flex-direction: row-reverse;
+	}
+}
+
+.fluid-three-column {
+	display: flex;
+	flex-wrap: wrap;
+	gap: theme("spacing.fluid-space-l");
+
+	& > * {
+		flex-grow: 1;
+		flex-basis: calc((30rem - 100%) * 999);
+	}
+
+	& > :nth-last-child(n + 4),
+	& > :nth-last-child(n + 4) ~ * {
+		flex-basis: 100%;
+	}
+}
