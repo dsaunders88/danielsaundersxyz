@@ -3,10 +3,5 @@
 @import "tailwindcss/utilities";
 @import "./typography.css";
 @import "./composition.css";
-@import "./custom-utilities";
-@import "./block.css";
-
-body {
-	background-color: theme("colors.primary.light");
-	color: theme("colors.primary.DEFAULT");
-}
+@import "./custom-utilities.css";
+@import "./themes.css";

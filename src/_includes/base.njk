@@ -1,35 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
+    <title>{{ site.name }}</title>
+    <meta name="description" content="{{ site.tagline }}">
+    <link rel="canonical" href="{{ site.url }}" />
+    <link rel="icon" type="image/jpg" href="/assets/ds-logo-favicon.jpg">
+    <!-- OG -->
+    <meta property="og:title" content="{{ site.name }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="{{ site.tagline }}" />
+    <meta property="og:url" content="{{ site.url }}" />
+    <meta property="og:image" content="/assets/ds-open-graph.png" />
+    <!-- Twitter -->
+    <meta property="twitter:title" content="{{ site.name }}" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:description" content="{{ site.tagline }}" />
+    <meta property="twitter:url" content="{{ site.url }}" />
+    <meta property="twitter:image" content="/assets/ds-open-graph.png" />
+    <meta name="twitter:creator" content="@dothedan" />
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="/site.css" />
     <link rel="stylesheet" href="https://unpkg.com/reasonable-colors@0.4.0/reasonable-colors-rgb.css">
-    <!-- Fonts -->
+    <!--Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
-    <!-- Apline.js Plugins -->
-    <script defer src="https://unpkg.com/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
-    <script defer src="https://unpkg.com/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
-    <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
-    <!-- Alpine.js Core -->
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,900;1,400&family=Corben:wght@400;700&family=Nunito:ital@0;1&family=Silkscreen:wght@700&family=Space+Mono:ital@0;1&family=Titillium+Web:ital,wght@0,400;0,900;1,400&display=swap" rel="stylesheet">
+    <script>
+        // On page load assign a random theme to document element
+        const startingThemes = ["theme-1", "theme-2", "theme-3", "theme-4"];
+        document.documentElement.classList.add(startingThemes[Math.floor(Math.random()*startingThemes.length)]);
+    </script>
 </head>
 <body>
-
-    {% include "partials/site-header.njk" %}
-
-    <main tabindex="-1" id="main-content">
+    <div class="cover content-wrapper wide">
         {% block content %}
         {% endblock %}
-    </main>
-    
-    {% include "partials/site-footer.njk" %}
+    </div>
 
+    <script>
+        const toggleButtons = document.querySelectorAll(".theme-toggle");
+        const themes = ["default-theme", "theme-1", "theme-2", "theme-3", "theme-4"];
+
+        // Set initial button active state
+        toggleButtons.forEach((button) => {
+            if (button.id === document.documentElement.className) {
+                button.classList.add("isActive");
+            }
+        })
+
+        // Theme switch function
+        function switchTheme(theme) {
+            let selectedTheme = theme;
+            let removedThemes = themes.filter(el => el !== selectedTheme);
+            if (selectedTheme === themes.find(el => el === selectedTheme)) {
+                document.documentElement.classList.add(selectedTheme);
+                document.documentElement.classList.remove(...removedThemes);
+            }
+        }
+
+        // Loop through buttons to add event handlers
+        toggleButtons.forEach((button) => {
+            button.addEventListener("click", (e) => {
+                toggleButtons.forEach(notSelected => notSelected.classList.remove('isActive'));
+                e.target.classList.toggle("isActive");
+                switchTheme(e.target.id);
+            });
+        });
+    </script>
 </body>
 </html>

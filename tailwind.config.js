@@ -2,32 +2,6 @@
 module.exports = {
 	content: ["./src/**/*.{html,njk,md}", ".eleventy.js"],
 	theme: {
-		colors: {
-			// Reasonable Colors https://reasonable.work/colors/
-			primary: {
-				light: "var(--color-rose-1)",
-				DEFAULT: "var(--color-rose-3)",
-				dark: "var(--color-rose-5)",
-			},
-			accent: {
-				1: "var(--color-blue-1)",
-				2: "var(--color-blue-3)",
-			},
-			neutral: {
-				100: "var(--color-gray-1)",
-				200: "var(--color-gray-2)",
-				300: "var(--color-gray-3)",
-				400: "var(--color-gray-4)",
-				500: "var(--color-gray-5)",
-				600: "var(--color-gray-6)",
-			},
-			white: "rgb(255, 255, 255)",
-		},
-		fontFamily: {
-			header: ["IBM Plex Sans", "sans-serif"],
-			body: ["IBM Plex Sans", "sans-serif"],
-			emphasis: ["IBM Plex Sans", "sans-serif"],
-		},
 		extend: {
 			// Utopia Fluid Type Size
 			fontSize: {

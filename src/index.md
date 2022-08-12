@@ -1,10 +1,7 @@
 ---
 layout: layouts/home.njk
-title: Home Page
+title: Daniel Saunders | Web Design & Development
+description: Daniel Saunders is a web designer & developer based in Los Angeles.
 ---
 
-## Hello World
 
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, rerum exercitationem doloribus aliquid temporibus nihil animi ut officia illo ratione?
-
-### heading 3

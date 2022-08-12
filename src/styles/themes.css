@@ -1,0 +1,83 @@
+.default-theme {
+    --bg-color: var(--color-gray-1);
+	--header-color: var(--color-gray-6);
+	--body-color: var(--color-gray-6);
+	--highlight-color: var(--color-gray-5);
+    --button-color: var(--color-gray-6);
+	--button-text: var(--color-gray-2);
+	--link-color: var(--color-gray-5);
+    --font-header: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-header-weight: 900;
+	--font-body: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-body-weight: 400;
+	--form-bg: var(--color-gray-2);
+	--form-text: var(--body-color);
+}
+
+.theme-1 {
+	--bg-color: var(--color-purple-6);
+	--bg-svg: url("/assets/theme-1-bg.svg");
+	--header-color: var(--color-purple-1);
+	--body-color: var(--color-purple-2);
+	--highlight-color: var(--color-pink-3);
+    --button-color: var(--color-pink-3);
+	--button-text: var(--color-purple-1);
+	--link-color: var(--color-pink-3);
+	--font-header: "Titillium Web", sans-serif;
+    --font-header-weight: 900;
+	--font-body: "Titillium Web", sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    --font-body-weight: 400;
+	--form-bg: var(--color-purple-6);
+	--form-text: var(--body-color);
+}
+
+.theme-2 {
+	--bg-color: var(--color-gray-1);
+    --bg-svg: url("/assets/theme-2-bg.svg");
+	--header-color: var(--color-gray-6);
+	--body-color: var(--color-gray-5);
+	--highlight-color: var(--color-red-4);
+    --button-color: var(--color-red-3);
+	--button-text: var(--color-gray-1);
+	--link-color: var(--color-red-3);
+	--font-header: "Bitter", serif;
+    --font-header-weight: 300;
+	--font-body: "Bitter", serif, "Apple Color Emoji", "Segoe UI Emoji";
+    --font-body-weight: 400;
+	--form-bg: var(--bg-color);
+	--form-text: var(--highlight-color);
+}
+
+.theme-3 {
+	--bg-color: var(--color-indigo-6);
+    --bg-svg: url("/assets/theme-3-bg-2.svg");
+	--header-color: var(--color-chartreuse-2);
+	--body-color: var(--color-indigo-3);
+	--highlight-color: var(--color-chartreuse-1);
+    --button-color: var(--color-chartreuse-2);
+	--button-text: var(--color-indigo-3);
+	--link-color: var(--color-indigo-3);
+	--font-header: "Silkscreen", cursive;
+    --font-header-weight: 700;
+	--font-body: "Space Mono", monospace, "Apple Color Emoji", "Segoe UI Emoji";
+    --font-body-weight: 400;
+	--form-bg: var(--color-indigo-5);
+	--form-text: var(--highlight-color);
+}
+
+.theme-4 {
+	--bg-color: var(--color-cinnamon-2);
+    --bg-svg: url("/assets/theme-4-bg.svg");
+	--header-color: var(--color-purple-6);
+	--body-color: var(--color-purple-6);
+	--highlight-color: var(--color-cinnamon-3);
+    --button-color: var(--color-cinnamon-3);
+	--button-text: var(--color-cinnamon-2);
+	--link-color: var(--color-cinnamon-3);
+	--font-header: "Corben", serif;
+    --font-header-weight: 700;
+	--font-body: "Nunito", sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    --font-body-weight: 400;
+	--form-bg: var(--color-cinnamon-1);
+	--form-text: var(--body-color);
+}

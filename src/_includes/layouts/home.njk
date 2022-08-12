@@ -2,10 +2,55 @@
 
 {% block content %}
 
-<article class="content-wrapper wide flow">
-    <h1>{{ title }}</h1>
-    {{ content | safe }}
-</article>
+<header class="site-header | cluster">
+    <ul class="contact-list | cluster | text-fluid-size-sm">
+        <li>
+            <a href="mailto:hi@danielsaunders.xyz" class="leading-none">contact</a><span class="dot-separator">•</span>
+        </li>
+        <li>
+            <a href="https://buttondown.email/ds-design" class="leading-none">newsletter</a><span class="dot-separator">•</span>
+        </li>
+        <li>
+            <a href="https://dribbble.com/dothedan" class="leading-none">dribbble</a><span class="dot-separator">•</span>
+        </li>
+        <li>
+            <a href="https://github.com/dsaunders88" class="leading-none">github</a>
+        </li>
 
+    </ul>
+    <div class="has-dropdown | text-fluid-size-sm">
+        <div><span>🎨 </span><a href="#">Pick a theme!</a></div>
+        <ul class="theme-list | dropdown">
+            <li><button id="theme-1" class="theme-toggle">💫 80’s</button></li>
+            <li><button id="theme-2" class="theme-toggle">🖌️ Accent</button></li>
+            <li><button id="theme-3" class="theme-toggle">👾 Terminal</button></li>
+            <li><button id="theme-4" class="theme-toggle">📀 Retro</button></li>
+            <li><button id="default-theme" class="theme-toggle">🔘 Mono</button></li>
+        </ul>
+    </div>
+</header>
+<main class="flow">
+    <div class="title">
+        <h1 class="mb-2">Daniel &shy;Saun&shy;ders</h1>
+        <p class="italic text-fluid-size-lg | highlight-color">Web designer & developer</p>
+    </div>
+    <p class="max-w-70ch">I’m a freelancer currently starting up a new web design studio. Sign up below to get notified when we launch. Otherwise, feel free to get in touch or explore my work.</p>
+    {% include "partials/buttondown.njk" %}
+</main>
+<footer>
+    <h2 class="font-bold mb-3 text-fluid-size-base">Recent things I’ve made:</h2>
+    <ul class="cluster mb-12">
+        <li>
+            <a href="https://saint-marks-altadena.webflow.io/">Saint Mark’s, Altadena CA</a><span class="dot-separator">•</span>
+        </li>
+        <li>
+            <a href="https://www.ourtonality.org/">Tonality, A Choral Spectrum</a><span class="dot-separator">•</span>
+        </li>
+        <li>
+            <a href="https://www.younglewin.com/">Young Lewin Advisors</a>
+        </li>
+    </ul>
+    <div class="text-fluid-size-sm">Made with <a href="https://www.11ty.dev/">Eleventy</a>, <a href="https://utopia.fyi/">Utopia</a>, & <a href="https://reasonable.work/colors/">Reasonable Colors</a></div>
+</footer>
 
 {% endblock %}

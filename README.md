@@ -1,14 +1,10 @@
-# DS Design Eleventy Starter
+# Eleventy Personal Site
 
-An Eleventy Starter for DS Design sites.
+Personal site for freelance web designer & developer Daniel Saunders.
 
 ## Features
 
-- **Eleventy essentials**: Directories setup, image and navigation plugins, .eleventy.js config
-- **Content structuring**: Subdirectories for pages and posts
-- **PostCSS**: Plugins for importing, nesting, autoprefixer, and TailwindCSS
-- **Customizable stylesheets**: Separate stylesheets following [CUBE workflow](https://cube.fyi/), with TailwindCSS for support utilities
-- **Every Layout primitives**: Composition stylesheet with pre-written layout primitives from [Every Layout](https://every-layout.dev/)
-- **Master design theme**: Extensible tailwind.config.js file for consistent custom theming through stylesheets
+- **Theme switcher**: Switchable themes based on CSS custom properties, using open source fonts and [Reasonable Colors](https://reasonable.work/colors/) palettes
 - **Fluid tyopography**: [Utopia](https://utopia.fyi/) scaling algorithm for fluid font sizes and spacing
-- **Reasonable colors**: [Color palette](https://reasonable.work/colors/) based on accessibility standards
+- **Customizable stylesheets**: Separate stylesheets following [CUBE workflow](https://cube.fyi/), with TailwindCSS for support utilities and PostCSS for importing and SASS-style nesting
+- **Every Layout primitives**: Composition stylesheet with pre-written layout primitives from [Every Layout](https://every-layout.dev/)

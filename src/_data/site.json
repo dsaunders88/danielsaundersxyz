@@ -1,27 +1,5 @@
 {
-	"name": "Site Name",
-	"tagline": "Site Tagline",
-	"url": "Site URL",
-	"SEOMedata": {
-		"siteName": "SEO Site Name",
-		"siteDescription": "SEO Site Description",
-		"openGraphImage": "SEO OG Image"
-	},
-	"socialLinks": [
-		{
-			"name": "Instagram",
-			"url": "link",
-			"icon": "instagram"
-		},
-		{
-			"name": "Facebook",
-			"url": "link",
-			"icon": "facebook"
-		},
-		{
-			"name": "YouTube",
-			"url": "link",
-			"icon": "youtube"
-		}
-	]
+	"name": "Daniel Saunders | Web Designer & Developer",
+	"tagline": "Daniel Saunders is a freelance web designer and developer in Los Angeles.",
+	"url": "https://www.danielsaunders.xyz/"
 }
