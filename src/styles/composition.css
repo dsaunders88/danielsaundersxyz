@@ -78,3 +78,106 @@ main {
 		--flow-space: theme("spacing.fluid-space-xs");
 	}
 }
+
+#projects h2 {
+	font-family: var(--font-body);
+	font-weight: var(--font-body-weight);
+}
+
+.responsive-grid {
+    --grid-gap: var(--space-m);
+	--col-gap: var(--space-xl);
+    --grid-column-count: 3;
+    --grid-item-min-width: 300px;
+    --gap-count: calc(var(--grid-column-count) - 1);
+    --total-gap-width: calc(var(--gap-count) * var(--grid-gap));
+    --grid-item-max-width: calc((100% - var(--total-gap-width)) / var(--grid-column-count));
+    display: grid;
+    column-gap: var(--grid-gap);
+	row-gap: var(--col-gap);
+    grid-template-columns: repeat(auto-fit, minmax(max(var(--grid-item-min-width), var(--grid-item-max-width)), 1fr));
+}
+
+.project-grid {
+
+	a {
+		text-decoration: none;
+	}
+
+	h3 {
+		font-weight: 700;
+		font-size: var(--step-0);
+
+		a:hover {
+			text-decoration: underline;
+		}
+	}
+
+	p {
+		color: inherit;
+		font-size: var(--step--1);
+	}
+
+	.flow {
+		--flow-space: var(--space-2xs);
+	}
+
+	.img-link {
+		position: relative;
+		box-shadow: 0px 0px 39px -32px rgba(0,0,0),0px 0px 16px -10px var(--highlight-color);
+		transition: transform 0.3s ease;
+	}
+
+	.img-link div {
+		position: absolute;
+		inset: 0;
+		background-color: var(--highlight-color);
+		border-radius: 0.5rem;
+		/*mix-blend-mode: multiply;*/
+		opacity: 0;
+		transition: opacity 0.2s ease;
+		z-index: 2;
+	}
+
+	.img-link svg {
+		width: 3rem;
+		height: 3rem;
+		color: var(--button-text);
+		position: absolute;
+		z-index: 3;
+		top: 50%;
+		left: 50%;
+		right: 0;
+		bottom: 0;
+		transform: translate(-50%, -75%);
+		opacity: 0;
+		transition: all 0.3s ease;
+	}
+
+	img {
+		position: relative;
+		aspect-ratio: 8/5;
+		object-fit: cover;
+		width: 100%;
+		border-radius: 0.5rem;
+		filter: saturate(1);
+		transition: all 0.2s ease;
+	}
+
+	.img-link:hover {
+		transform: translateY(-5px);
+
+		div {
+			opacity: 0.67;
+		}
+
+		img {
+			filter: saturate(0);
+		}
+
+		svg {
+			opacity: 1;
+			transform: translate(-50%, -50%);
+		}
+	}
+}

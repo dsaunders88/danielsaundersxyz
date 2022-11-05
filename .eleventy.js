@@ -1,4 +1,23 @@
 const htmlMinTransform = require("./src/transforms/html-min-transform.js");
+const Image = require("@11ty/eleventy-img");
+
+async function imageShortcode(src, alt, sizes) {
+	let metadata = await Image(src, {
+		widths: [300, 600, 900],
+		formats: ["webp"],
+		urlPath: "/assets/opt/",
+		outputDir: "./_site/assets/opt/"
+	});
+
+	let imageAttributes = {
+		alt,
+		sizes,
+		loading: "lazy",
+		decoding: "async"
+	};
+
+	return Image.generateHTML(metadata, imageAttributes);
+}
 
 module.exports = function (eleventyConfig) {
 
@@ -18,6 +37,8 @@ module.exports = function (eleventyConfig) {
 	// Watch targets
 	eleventyConfig.addWatchTarget("./src/styles/site.css");
 	eleventyConfig.addWatchTarget("./tailwind.config.js");
+
+	eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
 
 	return {
 		markdownTemplateEngine: "njk",

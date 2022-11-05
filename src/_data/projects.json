@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Annual Report",
+        "description": "Headington Institute • Print & digital design",
+        "link": "#",
+        "imageSrc": "/assets/headington-hero-2022.jpg",
+        "imageAlt": "Screenshot of printed annual report for Headington Institute",
+        "order": 3
+    },
+    {
+        "name": "Portfolio Website",
+        "description": "Alexander Blake • Web design & development",
+        "link": "https://zesty-muffin-14f8c9.netlify.app/",
+        "imageSrc": "/assets/alex-blake-screenshot.png",
+        "imageAlt": "Description",
+        "order": 1
+    },
+    {
+        "name": "Church Website",
+        "description": "Saint Mark's, Altadena CA • Web design & development",
+        "link": "https://www.saintmarksaltadena.org/",
+        "imageSrc": "/assets/saint-marks-dribbble.jpg",
+        "imageAlt": "Description",
+        "order": 2
+    },
+    {
+        "name": "Portfolio Website",
+        "description": "Sharon Kunde • Web design & development",
+        "link": "https://sharonkunde.com/",
+        "imageSrc": "/assets/sharon-kunde-screenshot.png",
+        "imageAlt": "Description",
+        "order": 4
+    },
+    {
+        "name": "Church Website",
+        "description": "St. John's Cathedral, Los Angeles CA • Web design & development",
+        "link": "https://www.stjohnsla.org/",
+        "imageSrc": "/assets/st-johns-thumb.jpg",
+        "imageAlt": "Description",
+        "order": 7
+    },
+    {
+        "name": "Marketing Website",
+        "description": "Young Lewin Advisors • Branding, web design & development",
+        "link": "https://www.younglewin.com/",
+        "imageSrc": "/assets/young-lewin-screenshot.png",
+        "imageAlt": "Description",
+        "order": 6
+    },
+    {
+        "name": "Identity",
+        "description": "Equip Psychology • Logo, branding, web design & development",
+        "link": "https://www.equippsychology.com/",
+        "imageSrc": "/assets/equip-brand-100.jpg",
+        "imageAlt": "Description",
+        "order": 8
+    },
+    {
+        "name": "Marketing Presentation",
+        "description": "Hodge Capital • Digital design",
+        "link": "#",
+        "imageSrc": "/assets/hodge-capital-business-feature.jpg",
+        "imageAlt": "Description",
+        "order": 9
+    },
+    {
+        "name": "Nonprofit Website",
+        "description": "Tonality • Web design & development",
+        "link": "https://www.ourtonality.org/",
+        "imageSrc": "/assets/tonality-dribbble.jpg",
+        "imageAlt": "Description",
+        "order": 5
+    }
+]

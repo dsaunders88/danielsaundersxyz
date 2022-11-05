@@ -1,10 +1,15 @@
+body {
+	min-height: 100vh;
+}
+
 .content-wrapper {
 	margin-inline: auto;
 	padding-inline: 1rem;
 	max-width: 60rem;
 
 	&.wide {
-		max-width: 80rem;
+		/*max-width: 80rem;*/
+		max-width: 1440px;
 	}
 }
 
@@ -46,6 +51,35 @@ a {
 	}
 }
 
+.primary-button {
+	font-size: var(--step--1);
+	@apply shadow-sm;
+	width: fit-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-inline: 1rem;
+	padding-block: 0.5rem;
+	border-radius: 0.375rem;
+	background-color: var(--button-color);
+	color: var(--button-text);
+	text-decoration: none;
+
+	span {
+		position: relative;
+		transition: all 0.1s ease;
+	}
+
+	&:hover {
+		color: var(--button-text);
+		filter: brightness(0.9);
+
+		span {
+			transform: translateY(-2px);
+		}
+	}
+}
+
 .mailerlite-form, .email-form {
 	font-size: var(--step--1);
 }
@@ -84,11 +118,16 @@ a {
 	outline-color: var(--highlight-color);
 }
 
+.has-dropdown {
+	z-index: 50;
+}
+
 .dropdown {
 	opacity: 0;
 	position: absolute;
 	width: fit-content;
-	z-index: 5;
+	min-width: 170px;
+	z-index: 55;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
