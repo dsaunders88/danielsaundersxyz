@@ -4,7 +4,7 @@
         "description": "Headington Institute • Print & digital design",
         "link": "#",
         "imageSrc": "/assets/headington-hero-2022.jpg",
-        "imageAlt": "Screenshot of printed annual report for Headington Institute",
+        "imageAlt": "Screenshot of a printed annual report for Headington Institute open in a spread layout. The main heading says 'Building a Global Team.'",
         "order": 3
     },
     {
@@ -12,7 +12,7 @@
         "description": "Alexander Blake • Web design & development",
         "link": "https://zesty-muffin-14f8c9.netlify.app/",
         "imageSrc": "/assets/alex-blake-screenshot.png",
-        "imageAlt": "Description",
+        "imageAlt": "Screenshot of the main landing section on a website for conductor and vocal contractor Alexander Lloyd Blake.",
         "order": 1
     },
     {
@@ -20,7 +20,7 @@
         "description": "Saint Mark's, Altadena CA • Web design & development",
         "link": "https://www.saintmarksaltadena.org/",
         "imageSrc": "/assets/saint-marks-dribbble.jpg",
-        "imageAlt": "Description",
+        "imageAlt": "Screenshots of a website for Saint Mark's Episcopal Church. The main heading says 'Welcome to Saint Mark's.'",
         "order": 2
     },
     {
@@ -28,7 +28,7 @@
         "description": "Sharon Kunde • Web design & development",
         "link": "https://sharonkunde.com/",
         "imageSrc": "/assets/sharon-kunde-screenshot.png",
-        "imageAlt": "Description",
+        "imageAlt": "Screenshot of the main landing section on a website for writer and academic Sharon Kunde.",
         "order": 4
     },
     {
@@ -36,7 +36,7 @@
         "description": "St. John's Cathedral, Los Angeles CA • Web design & development",
         "link": "https://www.stjohnsla.org/",
         "imageSrc": "/assets/st-johns-thumb.jpg",
-        "imageAlt": "Description",
+        "imageAlt": "Screenshots of a website for Saint John's Cathedral in Los Angeles.",
         "order": 7
     },
     {
@@ -44,7 +44,7 @@
         "description": "Young Lewin Advisors • Branding, web design & development",
         "link": "https://www.younglewin.com/",
         "imageSrc": "/assets/young-lewin-screenshot.png",
-        "imageAlt": "Description",
+        "imageAlt": "Screenshot of the main landing section on a website for Young Lewin Advisors. The main heading says 'Investment Real Estate Advisors in Southern California.'",
         "order": 6
     },
     {
@@ -52,15 +52,15 @@
         "description": "Equip Psychology • Logo, branding, web design & development",
         "link": "https://www.equippsychology.com/",
         "imageSrc": "/assets/equip-brand-100.jpg",
-        "imageAlt": "Description",
+        "imageAlt": "Screenshot of logo, typography, and color branding options for Equip Psychology.",
         "order": 8
     },
     {
-        "name": "Marketing Presentation",
-        "description": "Hodge Capital • Digital design",
+        "name": "Marketing Website",
+        "description": "Hodge Capital • Web & digital design",
         "link": "#",
         "imageSrc": "/assets/hodge-capital-business-feature.jpg",
-        "imageAlt": "Description",
+        "imageAlt": "Screenshots of a website for Hodge Capital Group.",
         "order": 9
     },
     {
@@ -68,7 +68,7 @@
         "description": "Tonality • Web design & development",
         "link": "https://www.ourtonality.org/",
         "imageSrc": "/assets/tonality-dribbble.jpg",
-        "imageAlt": "Description",
+        "imageAlt": "Screenshots of a website for Hodge Capital Group. The main heading says 'Latest Stories.'",
         "order": 5
     }
 ]
